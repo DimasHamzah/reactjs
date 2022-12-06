@@ -145,9 +145,9 @@ const api = (() => {
       throw new Error(message);
     }
 
-    const { data: { detailThread } } = responseJson;
+    const { data: { threads } } = responseJson;
 
-    return detailThread;
+    return threads;
   }
 
   async function seeDetailThread(id) {
